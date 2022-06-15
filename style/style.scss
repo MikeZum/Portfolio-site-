@@ -1,0 +1,24 @@
+$dark: #22222b;
+$light: #f9f8fe;
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    background-image: url(../img/bg.jpg);
+}
+
+.header {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+// 22 минута
+// git remote add origin https://github.com/MikeZum/Portfolio-site.git
+// git branch -M main
+// git push -u origin main
