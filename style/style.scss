@@ -3,6 +3,13 @@ $light: #f9f8fe;
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: $dark;
+}
+
+.wrapper {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .main{
@@ -18,7 +25,34 @@ body {
     justify-content: space-between;
 }
 
-// 22 минута
+.nav {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    &-item {
+        margin-left: 15px;
+    }
+    &-link {
+        color: $dark;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: 03s;
+        &:hover {
+            border-bottom: 1px solid $dark;
+        }
+    }
+}
+
+.title-h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 400px;
+    span {
+        font-weight: 500;
+    }
+}
+// 27 53 минута
 // git remote add origin https://github.com/MikeZum/Portfolio-site-.git
 // git branch -M main
 // git push -u origin master
