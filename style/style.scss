@@ -32,6 +32,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav {
@@ -69,8 +70,50 @@ body {
     margin: 0 auto;
 }
 
+.box-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;     
+    padding-top: 200px;
+    &-item {
+        flex: 0 0 45%;
+        max-width: 45%;
+        position: relative;
+        &:first-child {
+            display: flex;
+            justify-content: flex-end;
+        }     
+    }
+    &_back {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: -108px;
+    }
+    &_vertical {
+        position: absolute;
+        left: 0;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        bottom: 58px;
+        font-size: 16px;
+        &::after {
+            content: " ";
+            display: block;
+            width: 1px;
+            height: 45px;
+            background-color: $dark;
+            position: absolute;
+            right: 9px;
+            top: 93px;
+            
+            
+        }
+    }
+}
 
-// 34 56 минута
+
+// 40 05 минута
 // git remote add origin https://github.com/MikeZum/Portfolio-site-.git
 // git branch -M main
 // git push -u origin master
