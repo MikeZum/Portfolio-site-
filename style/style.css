@@ -200,22 +200,60 @@ body {
 .service {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  grid-gap: 45px; }
+  grid-gap: 48px;
+  margin-top: 65px; }
+  .service .title-h3 {
+    margin-bottom: 18px; }
   .service_ikon {
     background-repeat: no-repeat;
     display: block;
     width: 44px;
-    height: 37px; }
+    height: 37px;
+    margin-bottom: 30px; }
   .service_design {
     background-image: url(../img/ikon1.png);
     background-size: 41px 35px; }
+  .service_photo {
+    background-image: url(../img/ikon2.png);
+    background-size: 43px 35px; }
+  .service_web {
+    background-image: url(../img/ikon3.png);
+    background-size: 41px 35px; }
+  .service_social {
+    background-image: url(../img/ikon4.png);
+    background-size: 37px 37px; }
+  .service_marketing {
+    background-image: url(../img/ikon5.png);
+    background-size: 44px 37px; }
+  .service_app {
+    background-image: url(../img/ikon6.png);
+    background-size: 37px 37px; }
   .service_text {
     color: #717f82;
     font-size: 14px;
-    line-height: 1.5; }
+    line-height: 1.8;
+    margin-bottom: 25px; }
   .service_link {
     color: #22222b;
     font-size: 14px;
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .service_link-text {
+      opacity: 0;
+      width: 0; }
+    .service_link-line {
+      display: block;
+      width: 25px;
+      height: 1px;
+      background-color: #22222b; }
 
 /*# sourceMappingURL=style.css.map */
