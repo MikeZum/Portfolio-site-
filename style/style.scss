@@ -206,6 +206,16 @@ padding-bottom: 132px;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
     grid-gap: 48px;
     margin-top: 65px;
+    margin-bottom: 30px;
+    &-item {
+        &:hover {
+            .service_link-text {
+                width: inherit;
+                opacity: 1;
+                padding-right: 9px;
+            }
+        }
+    }
     .title-h3 {
         margin-bottom: 18px;
     }
@@ -248,7 +258,6 @@ padding-bottom: 132px;
         color: $text;
         font-size: 14px;
         line-height: 1.8;
-        margin-bottom: 25px;
     }
     &_link {
         color: $dark;
@@ -258,20 +267,24 @@ padding-bottom: 132px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        padding: 20px 0;
+        height: 50px;
         &-text {
             opacity: 0;
             width: 0;
+            padding-right: 0;
+            transition: 0.4s ease-in-out;
         }
         &-line {
             display: block;
             width: 25px;
             height: 1px;
             background-color: $dark;           
-        }      
+        }          
     }
 }
 
-// 1 15 18
+// 1 20 05
 // git remote add origin https://github.com/MikeZum/Portfolio-site-.git
 // git branch -M main
 // git push -u origin master
