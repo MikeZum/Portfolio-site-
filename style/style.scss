@@ -26,6 +26,7 @@ body {
     background-image: url(../img/bg.jpg);
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat; 
     height: 100%;
     justify-content: space-between;
     padding-top: 39px;
@@ -462,7 +463,7 @@ padding-bottom: 132px;
 
 .section-form {
     padding-top: 122px;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
 }
 
 .form {
@@ -493,8 +494,34 @@ padding-bottom: 132px;
     }
 }
 
+footer {
+    background-color: $dark;
+    padding-top: 64px;
+    padding-bottom: 69px;
+}
 
-// 2 00 05
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.social-network {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    &_item {
+        margin-left: 20px;
+    }
+    &_link {
+        color: #fff;
+    }
+}
+
+// 2 06 47
 // git remote add origin https://github.com/MikeZum/Portfolio-site-.git
 // git branch -M main
 // git push -u origin master
